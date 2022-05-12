@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/gunmetal"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".EmpLogin">
 
     <TextView
-        android:id="@+id/registerHeader"
+        android:id="@+id/empLoginHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let's Start"
+        android:text="Start your Onboarding Journey"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="30sp"
+        android:textAlignment="center"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,29 +26,28 @@
         app:layout_constraintVertical_bias="0.113" />
 
     <TextView
-        android:id="@+id/registerSubHeader"
+        android:id="@+id/empLoginSubHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your details to get started"
-        android:textAlignment="textStart"
+        android:text="Enter your details to login as new employee and proceed to upload details."
+        android:textAlignment="center"
         android:textColor="@color/carrot_orange"
-        android:textSize="21sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerHeader"
+        app:layout_constraintTop_toBottomOf="@+id/empLoginHeader"
         app:layout_constraintVertical_bias="0.036" />
 
-
     <EditText
-        android:id="@+id/registerEmail"
+        android:id="@+id/empEmail"
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginTop="96dp"
         android:background="@drawable/roundedcorner"
         android:ems="10"
-        android:hint="Enter email"
+        android:hint="Enter your email"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
@@ -56,71 +56,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerSubHeader" />
-
-    <EditText
-        android:id="@+id/registerPassword"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/roundedcorner"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/empLoginSubHeader" />
 
     <Button
-        android:id="@+id/signIn"
+        android:id="@+id/proceed_details"
         android:layout_width="175dp"
         android:layout_height="60dp"
         android:layout_marginBottom="116dp"
         android:backgroundTint="@color/dark_cyan"
-        android:text="Sign In"
+        android:text="Next"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPassword"
-        app:layout_constraintVertical_bias="0.500" />
+        app:layout_constraintTop_toBottomOf="@+id/empEmail"
+        app:layout_constraintVertical_bias="0.30" />
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
+    <TextView
+        android:id="@+id/registerFooter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Go Back"
+        android:textAlignment="textStart"
+        android:textColor="@color/carrot_orange"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signIn"
-        app:layout_constraintVertical_bias="0.175" />
-
-        <TextView
-            android:id="@+id/registerFooter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Click Here to Login as Employee"
-            android:textAlignment="textStart"
-            android:textColor="@color/carrot_orange"
-            android:textSize="21sp"
-            android:clickable="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.528"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_button"
-            app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintTop_toBottomOf="@+id/proceed_details"
+        app:layout_constraintVertical_bias="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-

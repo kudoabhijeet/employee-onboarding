@@ -12,9 +12,9 @@
         android:id="@+id/dashboardHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First things first.."
+        android:text="Dashboard "
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toTopOf="@+id/uploadFile"
@@ -28,10 +28,10 @@
         android:id="@+id/dashboardSubHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Joinee Details to move forward"
-        android:textAlignment="textStart"
+        android:text="All you need to do is upload details of employees and we'll handle the rest"
+        android:textAlignment="center"
         android:textColor="@color/carrot_orange"
-        android:textSize="21sp"
+        android:textSize="25sp"
         app:layout_constraintVertical_bias="0.036"
         app:layout_constraintBottom_toTopOf="@+id/uploadFile"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,30 +39,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashboardHeader" />
 
+
     <Button
         android:id="@+id/uploadFile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="388dp"
-        android:backgroundTint="@color/dark_cyan"
-        android:text="Choose Files"
+        android:layout_marginBottom="252dp"
+        android:width="250dp"
+        android:height="200dp"
+        android:backgroundTint="@color/carrot_orange"
+        android:text="Choose File"
         android:textColor="@color/white"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
         android:backgroundTint="@color/gunmetal"
+        android:text="Logout"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uploadFile" />
+        app:layout_constraintTop_toBottomOf="@+id/uploadFile"
+        app:layout_constraintVertical_bias="0.666" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

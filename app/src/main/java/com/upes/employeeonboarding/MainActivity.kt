@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var signInPassword: EditText
     private lateinit var signInButton: Button
     private lateinit var gSignInButton: View
+    private lateinit var empLoginRedirect : TextView
     private lateinit var auth: FirebaseAuth
     val RC_SIGN_IN : Int = 1
     private val TAG = "MainActivity"
@@ -122,6 +124,7 @@ class MainActivity : AppCompatActivity() {
         signInEmail = findViewById(R.id.registerEmail)
         signInPassword = findViewById(R.id.registerPassword)
         signInButton = findViewById(R.id.signIn)
+        empLoginRedirect = findViewById(R.id.registerFooter)
 
         // google signin button
         var gsignin = findViewById<View>(R.id.sign_in_button) as SignInButton
@@ -145,13 +148,13 @@ class MainActivity : AppCompatActivity() {
             //  for signing up new users
             signInUser(email,password)
         }
-//        registerButton.setOnClickListener {
-//            val intent = Intent(this,Register::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
         gsignin.setOnClickListener {
             signIn()
+        }
+        empLoginRedirect.setOnClickListener {
+            val intent = Intent(this, EmpLogin::class.java)
+            startActivity(intent)
+            finish()
         }
     }// onCreate
 }// class

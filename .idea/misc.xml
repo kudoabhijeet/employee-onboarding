@@ -5,8 +5,12 @@
       <map>
         <entry key="app/src/main/res/drawable/roundedcorner.xml" value="0.236" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_emp_dashboard.xml" value="0.24094202898550723" />
+        <entry key="app/src/main/res/layout/activity_emp_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_progress_view.xml" value="0.11277173913043478" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19882246376811594" />
+        <entry key="app/src/main/res/layout/activity_success.xml" value="0.11277173913043478" />
       </map>
     </option>
   </component>

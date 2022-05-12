@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal"
+    android:orientation="vertical"
+    tools:context=".EmpDashboard">
+
+    <TextView
+        android:id="@+id/empDashboardHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/empDashboardSubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:text="Submit all the details asked below to initiate joining process."
+        android:textAlignment="center"
+        android:textColor="@color/carrot_orange"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empDashboardHeader" />
+
+    <EditText
+        android:id="@+id/legalName"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:hint="Enter Full Name (Legal)"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empDashboardSubHeader" />
+
+    <EditText
+        android:id="@+id/IdNo"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:hint="Enter Govt. ID No."
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legalName" />
+
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundedcorner"
+        android:ems="10"
+        android:hint="Enter Mobile No."
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdNo" />
+
+    <TextView
+        android:id="@+id/uploadID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose ID Image"
+        android:padding="5sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNo"
+        app:layout_constraintVertical_bias="0.036" />
+
+
+    <Button
+        android:id="@+id/submitDetails"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="@color/dark_cyan"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadID"
+        app:layout_constraintVertical_bias="0.80" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
